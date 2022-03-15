@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"href="css/bootstrap.css"/>
+        <link rel = "stylesheet"href="index.css"/>
+        <script  src = "js/html5shiv.min"> </script>
+        <script src="js/respond.min"></script>
+        <style>
+          .frame{
+            background-image: linear-gradient(to top , #3082ec , #0c219b);
+          }
+          .ofcan{
+              background-image: linear-gradient(to right , #7c0b6d , #ee0d6b);
+          }
+        
+         .question-box h4{
+           
+            margin:20px;
+            color :white ;
+            
+          }
+          .hhh{
+            border-bottom : 1px solid red ;
+          }
+          .replay h5{
+            margin-left:20px;
+          }
+          .quest{
+            background-color: black;
+          }
+          .zero h4{
+            color :red;
+          }
+        </style>
+    </head>
+    <body>
+
+
+        <!--create navbar-->
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 mt-2">
+                        <div class="container-fluid ">
+                          <div class="navbar-brand" >learn front end</div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto  mb-2 mb-lg-0  ">
+                              <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="https://www.w3schools.com/html/html_images.asp">HTML</a>
+                              </li>
+                              <li class="nav-item me-5">
+                                <a class="nav-link" href="https://www.w3schools.com/css/css3_images.asp">CSS</a>
+                              </li>
+                              <li class="nav-item me-5">
+                                <a class="nav-link "href="https://www.w3schools.com/js/DEFAULT.asp">JAVA SCRIPT</a>
+                              </li>
+                              <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  FRONT END
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="http://vuejs.org/">VUE.JS</a></li>
+                                  <li><a class="dropdown-item" href="http://reactjs.org/">REACT.JS</a></li>
+                                  <li><a class="dropdown-item" href="http://angularjs.org/">ANGULAR.JS</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <div id="dinemic">
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" v-model="din">
+                                <a :href="din" class="btn btn-outline-success">Search</a>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <!--create offcanvas-->
+
+
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-brand text-danger">Offcanvas navbar</div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end ofcan" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-info ">
+                  <h3 class="offcanvas-title" id="offcanvasNavbarLabel">FRONT_END</h3>
+                  <button type="button" class="btn-close text-reset bg-info" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto  mb-2 mb-lg-0  ">
+                        <li class="nav-item me-5 ">
+                          <a class="nav-link text-white" aria-current="page" href="https://www.w3schools.com/html/html_images.asp">HTML</a>
+                        </li>
+                        <li class="nav-item me-5">
+                          <a class="nav-link text-white" href="https://www.w3schools.com/css/css3_images.asp">CSS</a>
+                        </li>
+                        <li class="nav-item me-5">
+                          <a class="nav-link text-white"href="https://www.w3schools.com/js/DEFAULT.asp">JAVA SCRIPT</a>
+                        </li>
+                        <li class="nav-item dropdown me-5">
+                          <a class="nav-link dropdown-toggle text-danger h4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            FRONT END
+                          </a>
+                          <ul class="dropdown-menu bg-secondary mb-3" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://vuejs.org/">VUE.JS</a></li>
+                            <li><a class="dropdown-item" href="http://reactjs.org/">REACT.JS</a></li>
+                            <li><a class="dropdown-item" href="http://angularjs.org/">ANGULAR.JS</a></li>
+                          </ul>
+                        </li>
+                        <!--create log in in frontlogin.html-->
+
+                          <li class="nav-item  ">
+                            <a class="nav-link text-warning h2"  aria-current="page"href="file:///C:/Users/hp/Desktop/bootstrab/frontlogin.html" >LOG IN</a>
+                          </li>
+
+                          <!-- finish create log in-->
+                    </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--finish create offcanvas-->
+
+
+
+
+        <!--create card html,css,js-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/html1.png " class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">html</div>
+                            <div class="card-subtitle text-muted mb-2">it's no programer</div>
+                            <p class="card-text"> HTML is very easy HTML is very easy HTML is very easy HTML is very easy HTML is very easy HTML i</p>
+                            <hr>
+                            <a class="btn btn-outline-warning "href="https://www.w3schools.com/html/html_images.asp" style="width:100%;">html</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/css.jpg  " class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">css</div>
+                            <div class="card-subtitle text-muted mb-2">it's no programer</div>
+                            <p class="card-text">css is very easy css is very easycss is very easycss is very easycss is very easycss is very easy</p>
+                            <hr>
+                            <a class="btn btn-outline-primary "href="https://www.w3schools.com/css/css3_images.asp" style="width:100%;">css</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/js.jpg" class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">java script</div>
+                            <div class="card-subtitle text-muted mb-2">it's  programer</div>
+                            <p class="card-text">js is very easy js is very easyjs is very easyjs is very easyjs is very easyjs is very easyjs is very easy ioehg</p>
+                            <hr>
+                            <a class="btn btn-outline-dark "href="https://www.w3schools.com/js/DEFAULT.asp" style="width:100%;">html</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--frame work-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center p-3 text-white p-2 my-5 frame">
+                    FRAME WORK
+                </div>
+            </div>
+        </div>
+
+        <!--card frame work-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/vue.jpg " class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">vue.js</div>
+                            <div class="card-subtitle text-muted mb-2">it's programer</div>
+                            <p class="card-text">HTML is very easy  HTML is very easy HTML is very easy HTML is very easy HTML is very easy HTML i</p>
+                            <hr>
+                            <a class="btn btn-outline-success "href="https://vuejs.org/" style="width:100%;">vue.js</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/react.png " class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">react.js</div>
+                            <div class="card-subtitle text-muted mb-2">it's no programer</div>
+                            <p class="card-text">css is very easy css is very easycss is very easycss is very easycss is very easycss is very easy</p>
+                            <hr>
+                            <a class="btn btn-outline-info "href="https://reactjs.org/" style="width:100%;">react.js</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-3">
+                    <div class="card shadow"style="width:18rem;">
+                        <img src="image front/angular.png" class="card-img-top responsive">
+                        <div class="card-body">
+                            <div class="card-title h2">angular</div>
+                            <div class="card-subtitle text-muted mb-2">it's  programer</div>
+                            <p class="card-text">js is very easy js is very easyjs is very easyjs is very easyjs is very easyjs is very easyjs is very easy ioehg</p>
+                            <hr>
+                            <a class="btn btn-outline-danger "href="https://angularjs.org/" style="width:100%;">angular.js</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.js"></script>
+        <script src="front.js"></script>
+        <script src="js/vue.js"></script>
+    </body>
+</html>
